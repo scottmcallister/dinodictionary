@@ -22,6 +22,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# gem used to generate cron jobs within the rails application
+gem 'whenever', require: false
+# For AJAX based pagination on search pages
+gem 'will_paginate', '3.0.7'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

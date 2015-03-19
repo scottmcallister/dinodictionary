@@ -1,0 +1,10 @@
+name	era	diet	order	length	image_url	description	location
+Tyrannosaurus	Cretacious	Carnivore	Saurischia	40	trex.jpg	This is a T-Rex	Canada, USA
+Velociraptor	Cretacious	Carnivore	Saurischia	6	velociraptor.jpg	This is a Raptor	Mongolia
+Aardonyx	Jurassic	Herbivore	Saurischia	26	aardonyx.jpg	This is an Aardonyx	South Africa
+Bactrosaurus	Cretacious	Herbivore	Ornithischia	19	bactrosaurus.jpg		China
+Chirostenotes	Jurassic	Omnivore	Saurischia	6	chirostenotes.jpg		Canada
+Dracorex	Cretacious	Herbivore	Ornithischia	13	dracorex.jpg		USA
+Edmontosaurus	Cretacious	Herbivore	Ornithischia	42	edmontosaurus.jpg		Canada
+Fukuiraptor	Cretacious	Carnivore	Saurischia	13	fukuiraptor.jpg		Japan
+Guanlong	Jurassic	Carnivore	Saurischia	6	guanlong.jpg		China

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keywords: MyString
+  name: MyString
+  era: MyString
+  diet: MyString
+  order: MyString
+  min_length: 1
+  max_length: 1
+  min_height: 1
+
+two:
+  keywords: MyString
+  name: MyString
+  era: MyString
+  diet: MyString
+  order: MyString
+  min_length: 1
+  max_length: 1
+  min_height: 1
