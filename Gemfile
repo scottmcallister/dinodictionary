@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'whenever', require: false
 # For AJAX based pagination on search pages
 gem 'will_paginate', '3.0.7'
+# Helps with loading custom JS stuff
+gem 'nifty-generators', '0.4.6'
 
 
 # Use ActiveModel has_secure_password
