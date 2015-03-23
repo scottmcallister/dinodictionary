@@ -1,20 +1,21 @@
-<%= javascript_include_tag "/javascripts/pagination.js" %>
-
 <p id="notice"><%= notice %></p>
 
 
 <h1>Listing Dinosaurs</h1>
 
-  <%= form_tag dinosaurs_path, :method => 'get' do %>
+  <%= form_tag dinosaurs_path, :method => 'get', :id => "dinosaur_search" do %>
+
+  	
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search" %>
+
+	<div id="dinosaurs">
+	  <%= render 'dinosaurs' %>
+	</div>
   <% end %>
 
 <%= link_to "Advanced Search", new_search_path %>
 
-<div id="dinosaurs">
-  <%= render 'dinosaurs' %>
-</div>
 <br>
 
 <%= link_to 'New Dinosaur', new_dinosaur_path %>

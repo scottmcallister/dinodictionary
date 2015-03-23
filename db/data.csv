@@ -1,10 +1,106 @@
 name	era	diet	order	length	image_url	description	location
-Tyrannosaurus	Cretacious	Carnivore	Saurischia	40	trex.jpg	This is a T-Rex	Canada, USA
-Velociraptor	Cretacious	Carnivore	Saurischia	6	velociraptor.jpg	This is a Raptor	Mongolia
-Aardonyx	Jurassic	Herbivore	Saurischia	26	aardonyx.jpg	This is an Aardonyx	South Africa
-Bactrosaurus	Cretacious	Herbivore	Ornithischia	19	bactrosaurus.jpg		China
-Chirostenotes	Jurassic	Omnivore	Saurischia	6	chirostenotes.jpg		Canada
-Dracorex	Cretacious	Herbivore	Ornithischia	13	dracorex.jpg		USA
-Edmontosaurus	Cretacious	Herbivore	Ornithischia	42	edmontosaurus.jpg		Canada
-Fukuiraptor	Cretacious	Carnivore	Saurischia	13	fukuiraptor.jpg		Japan
+Aardonyx	Early Jurassic	Herbivore	Saurischia	8	aardonyx.jpg	This is an Aardonyx	South Africa
+Abelisaurus	Late Cretaceous	Carnivore	Saurischia	9	abelisaurus.jpg	Blah	Argentina
+Achelousaurus	Late Cretaceous	Herbivore	Ornithischia	6	achelousaurus.jpg	Blah	USA
+Achillobator	Late Cretaceous	Carnivore	Saurischia	5	achillobator.jpg	Blah	Mongolia
+Acrocanthosaurus	Late Cretaceous	Carnivore	Saurischia	12	acrocanthosaurus.jpg	Blah	Canada, USA
+Aegyptosaurus	Early Cretaceous	Herbivore	Saurischia	15	aegyptosaurus.jpg	Blah	Egypt
+Afrovenator	Early Cretaceous	Carnivore	Saurischia	9	afrovenator.jpg	Blah	Niger
+Agilisaurus	Late Jurassic	Herbivore	Ornithischia	2	agilisaurus.jpg Blah	China
+Alamosaurus	Late Cretaceous	Herbivore	Saurischia	21	alamosaurus.jpg	Blah	USA
+Albertaceratops	Late Cretaceous	Herbivore	Ornithischia	7	albertaceratops.jpg	Blah	Canada, USA
+Albertosaurus	Late Cretaceous	Carnivore	Saurischia	9	albertosaurus.jpg	Blah	Canada
+Alectrosaurus	Late Cretaceous	Carnivore	Saurischia	5	alectrosaurus.jpg	Blah	China, Mongolia
+Alioramus	Late Cretaceous	Carnivore	Saurischia	6	alioramus.jpg	Blah	Mongolia
+Allosaurus	Late Jurassic	Carnivore	Saurischia	12	allosaurus.jpg	Blah	Portugal, USA
+Alvarezsaurus	Late Cretaceous	Carnivore	Saurischia	2	alvarezsaurus.jpg	Blah	Argentina
+Amargasaurus	Early Cretaceous	Herbivore	Saurischia	12	amargasaurus.jpg	Blah	Argentina
+Ammosaurus	Early Jurassic	Herbivore	Saurischia	5	ammosaurus.jpg	Blah	USA
+Ampelosaurus	Late Cretaceous	Herbivore	Saurischia	15	ampelosaurus.jpg	Blah	France
+Amygdalodon	Mid Jurassic	Herbivore	Saurischia	15	amygdalodon.jpg	Blah	Argentina
+Anatotitan	Late Cretaceous	Herbivore	Ornithischia	9	anatotitan.jpg	Blah	USA
+Anchiceratops	Late Cretaceous	Herbivore	Ornithischia	6	anchiceratops.jpg	Blah	Canada
+Anchisaurus	Early Jurassic	Herbivore	Saurischia	2	anchisaurus.jpg	Blah	USA
+Ankylosaurus	Late Cretaceous	Herbivire	Ornithischia	7	ankylosaurus.jpg	Blah	Canada, USA
+Anserimimus	Late Cretaceous	Carnivore	Saurischia	3	anserimimus.jpg	Blah	Mongolia
+Antarctopelta	Late Cretaceous	Herbivore	Ornithischia	4	antarctopelta.jpg	Blah	Antarctica
+Antarctosaurus	Late Cretaceous	Herbivore	Saurischia	18	antarctosaurus.jpg	Blah	Argentina, Chile, Uraguay
+Apatosaurus	Late Jurassic	Herbivore	Saurischia	21	apatosaurus.jpg	Blah	USA
+Aragosaurus	Early Cretaceous	Herbivore	Saurischia	18	aragosaurus.jpg	Blah	Spain
+Aralosaurus	Late Cretaceous	Herbivore	Ornithischia	8	aralosaurus.jpg	Blah	Kazakhstan
+Archaeoceratops	Early Cretaceous	Herbivore	Ornithischia	1	archaeoceratops.jpg	Blah	China
+Archaeopteryx	Late Jurassic	Carnivore	Saurischia	0.5	archaeopteryx.jpg	Blah	Germany
+Archaeornithomimus	Late Cretaceous	Carnivore	Saurischia	3.5	archaeornithomimus.jpg	Blah	China, Uzbekistan
+Argentinosaurus	Late Cretaceous	Herbivore	Saurischia	35	argentinosaurus.jpg	Blah	Argentina
+Arrhinoceratops	Late Cretaceous	Herbivore	Ornithischia	8	arrhinoceratops.jpg	Blah	Canada
+Atlascopcosaurus	Early Cretaceous	Herbivore	Ornithischia	3	atlascopcosaurus.jpg	Blah	Australia
+Aucasaurus	Late Cretaceous	Carnivore	Saurischia	5	aucasaurus.jpg	Blah	Argentina
+Austrosaurus	Early Cretaceous	Herbivore	Saurischia	15	austrosaurus.jpg	Blah	Australia
+Avaceratops	Late Cretaceous	Herbivore	Ornithischia	2.3	avaceratops.jpg	Blah	USA
+Avalonia	Late Triassic	Omnivore	Saurischia	9	avalonia.jpg	Blah	England, United Kingdom
+Avimimus	Late Cretaceous	Omnivore	Saurischia	1.5	avimimus.jpg	Blah	China, Mongolia
+Azendohsaurus	Late Triassic	Omnivore	Saurischia	1.8	azendohsaurus.jpg	Blah	Morocco
+Bactrosaurus	Late Cretaceous	Herbivore	Ornithischia	19	bactrosaurus.jpg		China
+Bagaceratops	Late Cretaceous	Herbivore	Ornithischia	1	bagaceratops.jpg	Blah	Mongolia
+Bambiraptor	Late Cretaceous	Carnivore	Saurischia	1	bambiraptor.jpg	Blah	USA
+Barapasaurus	Early Jurassic	Herbivore	Saurischia	14	barapasaurus.jpg	Blah	India
+Barosaurus	Late Jurassic	Herbivore	Saurischia	24	barosaurus.jpg	Blah	Tanzania, USA
+Baryonyx	Early Cretaceous	Carnivore	Saurischia	10	baryonyx.jpg	Blah	England, United Kingdom, Spain
+Becklespinax	Early Cretaceous	Carnivore	Saurischia	5	becklespinax.jpg	Blah	England, United Kingdom
+Beipiaosaurus	early Cretaceous	Omnivore	Saurischia	2	beipiaosaurus.jpg	Blah	China
+Bellusaurus	Mid Jurassic	Herbivore	Saurischia	5	bellusaurus.jpg	Blah	China
+Borogovia	Late Cretaceous	Carnivore	Saurischia	1.5	borogovia.jpg	Blah	Mongolia
+Brachiosaurus	Late Jurassic	Herbivore	Saurischia	30	brachiosaurus.jpg	Blah	Tanzania, USA, Portugal, Algeria
+Brachyceratops	Late Cretaceous	Herbivore	Ornithischia	2	brachyceratops.jpg	Blah	USA
+Brachylophosaurus	Late Cretaceous	Herbivore	Ornithischia	7	brachylophosaurus.jpg	Blah	Canada, USA
+Brachytrachelopan	Mid Jurassic	Herbivore	Saurischia	10	brachytrachelopan.jpg	Blah	Argentina
+Bugenasaura	Late Cretaceous	Herbivore	Ornithischia		bugenasaura.jpg	Blah	USA
+Buitreraptor	Late Cretaceous	Carnivore	Saurischia	1.3	buitreraptor.jpg	Blah	Argentina
+Camarasaurus	Late Jurassic 	Herbivore	Saurischia	23	camarasaurus.jpg	Blah	USA
+Camptosaurus	Late Jurassic	Herbivore	Ornithischia	5	camptosaurus.jpg	Blah	England, United Kingdom
+Carcharodontosaurus	Late Cretaceous	Carnivore	Saurischia	15	carcharodontosaurus.jpg	Blah	North Africa
+Carnotaurus	Late Cretaceous	Carnivore	Saurischia	7.6	carnotaurus.jpg	Blah	Argentina
+Caudipteryx	Early Cretaceous	Omnivore	Saurischia	1	caudipteryx.jpg	Blah	China
+Cedarpelta	Early Cretaceous	Herbivore	Ornithischia	10	cedarpelta.jpg	Blah	USA
+Ceratosaurus	Late Jurassic	Carnivore	Saurischia	6	ceratosaurus.jpg	Blah	USA
+Cetiosauriscus	Mid Jurassic	Herbivore	Saurischia	15	cetiosauriscus.jpg	Blah	England, United Kingdom
+Cetiosaurus	Mid Jurassic	Herbivore	Saurischia	18	cetiosaurus.jpg	Blah	England, United Kingodm
+Chaoyangsaurus	Late Jurassic	Herbivore	Ornithischia	1.1	chaoyangsaurus.jpg	Blah	China
+Chasmosaurus	Late Cretaceous	Herbivore	Ornithischia	5	chasmosaurus.jpg	Blah	Canada
+Chialingosaurus	Late Jurassic	Herbivore	Ornithischia	4	chialingosaurus.jpg	Blah	China
+Chindesaurus	Late Triassic	Carnivore	Saurischia	4	chindesaurus.jpg	Blah	USA
+Chinshakiangosaurus	Late Jurassic	Herbivore	Saurischia	12	chinshakiangosaurus.jpg	Blah	China
+Chirostenotes	Late Jurassic	Omnivore	Saurischia	6	chirostenotes.jpg	Blah	Canada
+Chubutisaurus	Early Cretaceous	Herbivore	Saurischia	23	chubutisaurus.jpg	Blah	Argentina
+Chungkingosaurus	Late Jurassic	Herbivore	Ornithischia	4	chungkingosaurus.jpg	Blah	China
+Citipati	Late Cretaceous	Omnivore	Saurischia	2.1	citipati.jpg	Blah	Mongolia
+Coelophysis	Late Triassic	Carnivore	Saurischia	3	coelophysis.jpg	Blah	USA
+Coelurus	Late Jurassic	Carnivore	Saurischia	1.8	coelurus.jpg	Blah	USA
+Coloradisaurus	Late Triassic	Omnivore	Saurischia	4	coloradisaurus.jpg	Blah	Argentina
+Compsognathus	Late Jurassic	Carnivore	Saurischia	0.65	compsognathus.jpg	Blah	Germany, France
+Conchoraptor	Late Cretaceous	Carnivore	Saurischia	1.5	conchoraptor.jpg	Blah	Mongolia
+Confuciusornis	Early Cretaceous	Carnivore	Saurischia	0.25	confuciusornis.jpg	Blah	China
+Corythosaurus	Late Cretaceous	Herbivore	Ornithischia	10	corythosaurus.jpg	Blah	Canada, USA
+Cryolophosaurus	Early Jurassic	Carnivore	Saurischia	8	cryolophosaurus.jpg	Blah	Antarctica
+Dacentrurus	Late Jurassic	Herbivore	Ornithischia	6	dacentrurus.jpg	Blah	England, United Kingdom, Portugal, France
+Daspletosaurus	Late Cretaceous	Carnivore	Saurischia	9	daspeletosaurus.jpg	Blah	Canada
+Datousaurus	Mid Jurassic	Herbivore	Saurischia	15	datousaurus.jpg	Blah	China
+Deinocheirus	Late Cretaceous	unknown	Saurischia	10	deinocheirus.jpg	Blah	Mongolia
+Deinonychus	Early Cretaceous	Carnivore	Saurischia	3	deinonychus.jpg	Blah	USA
+Deltadromeus	Late Cretaceous	Carnivore	Saurischia	8	deltadromeus.jpg	Blah	Morocco
+Diceratops	Late Cretaceous	Herbivore	Ornithischia	7	diceratops.jpg	Blah	USA
+Dicraeosaurus	Late Jurassic	Herbivore	Saurischia	20	dicraeosaurus.jpg	Blah	Tanzania
+Dilophosaurus	Early Jurassic	Carnivore	Saurischia	6	dilophosaurus.jpg	Blah	USA
+Diplodocus	Late Jurassic	Herbivore	Saurischia	26	diplodocus.jpg	Blah	USA
+Dracorex	Late Cretaceous	Herbivore	Ornithischia	13	dracorex.jpg	description	USA
+Dravidosaurus	Late Cretaceous	Herbivore	Ornithischia	3	dravidosaurus.jpg	description	India
+Dromaeosaurus	Late Cretaceous	Carnivore	Saurischia	1.8	dromaeosaurus.jpg	description	Canada, USA
+Dromiceiomimus	Late Cretaceous	Omnivore	Saurischia	3.5	dromiceiomimus.jpg	description	Canada
+Dryosaurus	Late Jurassic	Herbivore	Ornithischia	4	dryosaurus.jpg	description	Tanzania, USA
+Dryptosaurus	Late Cretaceous	Carnivore	Saurischia	6	dryptosaurus.jpg	description	USA
+Dubreuillosaurus	Late Jurassic	Carnivore	Saurischia	unknown	dubreuillosaurus.jpg	description	France
+Edmontosaurus	Cretaceous	Herbivore	Ornithischia	42	edmontosaurus.jpg		Canada
+Fukuiraptor	Cretaceous	Carnivore	Saurischia	13	fukuiraptor.jpg		Japan
 Guanlong	Jurassic	Carnivore	Saurischia	6	guanlong.jpg		China
+Tyrannosaurus	Cretaceous	Carnivore	Saurischia	40	trex.jpg	This is a T-Rex	Canada, USA
+Velociraptor	Cretaceous	Carnivore	Saurischia	6	velociraptor.jpg	This is a Raptor	Mongolia

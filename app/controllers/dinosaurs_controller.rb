@@ -1,10 +1,12 @@
 class DinosaursController < ApplicationController
+  helper_method :sort_column, :sort_direction
+
   before_action :set_dinosaur, only: [:show, :edit, :update, :destroy]
 
   # GET /dinosaurs
   # GET /dinosaurs.json
   def index
-    @dinosaurs = Dinosaur.search(params[:search]).order(params[:sort] + " " + params[:direction]).paginate(:per_page => 3, :page => params[:page])
+    @dinosaurs = Dinosaur.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 3, :page => params[:page])
   end
 
   # GET /dinosaurs/1
@@ -67,8 +69,19 @@ class DinosaursController < ApplicationController
       @dinosaur = Dinosaur.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Only allow the white list of params through.
     def dinosaur_params
       params.require(:dinosaur).permit(:name, :era, :diet, :taxonomic_order, :length, :height, :image_url, :description)
     end
+
+    def sort_column
+      #params[:sort] || "name"
+      Dinosaur.column_names.include?(params[:sort]) ? params[:sort] : "name"
+    end
+
+    def sort_direction
+      #params[:direction] || "asc"
+      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc" 
+    end
+
 end
