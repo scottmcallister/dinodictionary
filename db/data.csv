@@ -177,5 +177,43 @@ Lophostropheus	Early Jurassic	Carnivore	Saurischia	6	lophostropheus.jpg	descript
 Lufengosaurus	Early Jurassic	Herbivore	Saurischia	6	lufengosaurus.jpg	description	China
 Lurdusaurus	Early Cretaceous	Herbivore	Ornithischia	9	lurdusaurus.jpg	description	Niger
 Lycorhinus	Late Triassic	Herbivore	Ornithischia	1.2	lycorhinus.jpg	description	South Africa
+Magyarosaurus	Late Cretaceous	Herbivore	Saurischia	6	magyarosaurus.jpg	description	Romania
+Maiasaura	Late Cretaceous	Herbivore	Ornithischia	9	miasaura.jpg	description	USA
+Majungatholus	Late Cretaceous	Carnivore	Saurischia	6	majungatholus.jpg	description	Madagascar
+Malawisaurus	Early Cretaceous	Herbivore	Saurischia	9	malawisaurus.jpg	description	Malawi
+Mamenchisaurus	Late Jurassic	Herbivore	Saurischia	22	mamenchisaurus.jpg	description	China
+Mapusaurus	Late Cretaceous	Carnivore	Saurischia	13	mapusaurus.jpg	description	Argentina
+Marshosaurus	Late Jurassic	Carnivore	Saurischia	6	marshosaurus.jpg	description	USA
+Masiakasaurus	Late Cretaceous	Carnivore	Saurischia	2	masiakasaurus.jpg	description	Madagascar
+Massospondylus	Early Jurassic	Omnivore	Saurischia	4	massospondylus.jpg	description	Lesotho, South Africa, Zimbabwe
+Maxakalisaurus	Late Cretaceous	Herbivore	Saurischia	13	maxakalisaurus.jpg	description	Brazil
+Megalosaurus	Mid Jurassic	Carnivore	Saurischia	9	megalosaurus.jpg	description	England, United Kingdom
+Melanorosaurus	Late Triassic	Omnivore	Saurischia	12	melanorosaurus.jpg	description	South Africa
+Metriacanthosaurus	Late Jurassic	Carnivore	Saurischia	8.2	metriacanthosaurus.jpg	description	England, United Kingdom
+Microceratops	Late Cretaceous	Herbivore	Ornithischia	0.5	microceratops.jpg	description	China, Mongolia
+Micropachycephalosaurus	Late Cretaceous	Herbivore	Ornithischia	0.6	micropachycephalosaurus.jpg	description	China
+Microraptor	Early Cretaceous	unknown	Saurischia	0.8	microraptor.jpg	description	China
+Minmi	Early Cretaceous	Herbivore	Ornithischia	3	minmi.jpg	description	Australia
+Monolophosaurus	Mid Jurassic	Carnivore	Saurischia	5.7	monolophosaurus.jpg	description	China
+Mononykus	Late Cretaceous	unknown	Saurischia	1	mononykus.jpg	description	China, Mongolia
+Mussaurus	Late Triassic	Herbivore	Saurischia	3	mussaurus.jpg	description	Argentina
+Muttaburrasaurus	Early Cretaceous	Herbivore	Ornithischia	7	muttaburrasaurus.jpg	description	Australia
+name	era	diet	order	length	image_url	description	location
+name	era	diet	order	length	image_url	description	location
+name	era	diet	order	length	image_url	description	location
+name	era	diet	order	length	image_url	description	location
+name	era	diet	order	length	image_url	description	location
+name	era	diet	order	length	image_url	description	location
+
+
+
+
+
+
+
+
+
+
+
 Tyrannosaurus	Cretaceous	Carnivore	Saurischia	40	trex.jpg	This is a T-Rex	Canada, USA
 Velociraptor	Cretaceous	Carnivore	Saurischia	6	velociraptor.jpg	This is a Raptor	Mongolia
