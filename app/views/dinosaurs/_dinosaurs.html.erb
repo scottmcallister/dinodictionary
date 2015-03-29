@@ -21,10 +21,10 @@
   </thead>
 
   <tbody>
-    <%= will_paginate @dinosaurs %>
+    <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
     <% @dinosaurs.each do |dinosaur| %>
       <tr style="height:200px;">
-        <td><%= image_tag(dinosaur.image_url, width: "200", height: "auto", alt: dinosaur.name)%></td>
+        <td><%= image_tag(dinosaur.image_url, class: "dino_img", alt: dinosaur.name)%></td>
         <td><%= dinosaur.name %></td>
         <td><%= dinosaur.era %></td>
         <td><%= dinosaur.diet %></td>
@@ -37,7 +37,7 @@
     <% end %>
     
   </tbody>
-</table>
-<br>
 
+</table>
 <%= will_paginate @dinosaurs %>
+

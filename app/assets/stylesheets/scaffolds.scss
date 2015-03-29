@@ -20,13 +20,7 @@ pre {
 
 a {
   color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+  text-decoration:none;
 }
 
 div {
@@ -43,6 +37,13 @@ div {
   padding: 2px;
   background-color: red;
   display: table;
+}
+
+.dino_img{
+  max-width:150px;
+  width:auto;
+  max-height:150px;
+  height:auto;
 }
 
 #error_explanation {

@@ -1,21 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="branding">
+	<%= image_tag("skull-white.png", :class => "logo") %>
+	<label class="title">Dinosaur Search</label>
+</div>
 
+<div class="content">
 
-<h1>Listing Dinosaurs</h1>
+	<p id="notice"><%= notice %></p>
 
-  <%= form_tag dinosaurs_path, :method => 'get', :id => "dinosaur_search" do %>
+	  <%= form_tag dinosaurs_path, :method => 'get', :id => "dinosaur_search" do %>
 
-  	
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search" %>
+	  	
+	    <%= text_field_tag :search, params[:search], class: 'search_bar' %>
+	    <!--<%= submit_tag "Search" %>-->
 
-	<div id="dinosaurs">
-	  <%= render 'dinosaurs' %>
-	</div>
-  <% end %>
+		<div id="dinosaurs">
+		  <%= render 'dinosaurs' %>
+		</div>
+	  <% end %>
 
-<%= link_to "Advanced Search", new_search_path %>
-
-<br>
-
-<%= link_to 'New Dinosaur', new_dinosaur_path %>
+</div>

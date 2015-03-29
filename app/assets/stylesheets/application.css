@@ -14,6 +14,96 @@
  *= require_self
  */
 
+body{
+	background: url(black-stone.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+a :hover{
+
+}
+
+.branding{
+	width:auto;
+	max-width:900px;
+	text-align:left;
+	margin:0 auto;
+	vertical-align:middle;
+	height:100px;
+	line-height: 100px;
+	font:normal normal 50px/30px Arial, Helvetica, sans-serif;
+}
+
+.content{
+	width:auto;
+	max-width:900px;
+	text-align:center;
+	margin: 0 auto;
+	background: #e6e6e6;
+	border-radius: 3px;
+}
+
+.logo{
+	height:100px;
+	width:100px;
+}
+
+.title{
+	color:#ffffff;
+	padding:30px;
+	vertical-align: 25px;
+}
+
+.search_bar{
+	background: url('search_icon.png') no-repeat 8px 6px #ffffff;
+	border-radius:15px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	padding:6px 15px 6px 30px;
+	color:#bcbcbc;
+	border:1px solid #d0d0d0;
+	float:left;
+	margin:20px;
+}
+
+.pagination{
+	width:auto;
+	float:right;
+	margin:20px;
+	border:1px solid #d0d0d0;
+	border-radius:4px;
+
+}
+
+.pagination a{
+	border-right:1px solid #d0d0d0;
+	padding:5px;
+	float:left;
+}
+
+.pagination span{
+	border-right:1px solid #d0d0d0;
+	padding:5px;
+	float:left;
+}
+
+.pagination em{
+	border-right:1px solid #d0d0d0;
+	padding:5px;
+	float:left;
+}
+
+.pagination .disabled{
+	display:none;
+}
+
+.pagination .next_page{
+	border-right:none;
+}
+
 th .current{
 	padding-right: 15px;
 	background-repeat: no-repeat;
@@ -27,3 +117,6 @@ th .asc{
 th .desc{
 	background-image: url("down_arrow.gif");
 }
+
+
+
