@@ -39,11 +39,12 @@ div {
   display: table;
 }
 
-.dino_img{
+.dino-img{
   max-width:150px;
   width:auto;
   max-height:150px;
   height:auto;
+  float:left;
 }
 
 #error_explanation {

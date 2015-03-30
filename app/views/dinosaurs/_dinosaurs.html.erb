@@ -1,43 +1,59 @@
 <%= hidden_field_tag :direction, params[:direction]%>
 <%= hidden_field_tag :sort, params[:sort]%>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
+<div>
+    <div class="toolbar">
+      <div class="upper-toolbar">
+        <%= text_field_tag :search, params[:search], class: 'search_bar' %>
+        <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
+      </div>
 
-      <th><%= #link_to "Name", :sort => "name"
-              sortable "name" %></th>
-      <th><%= #link_to "Era", :sort => "era" 
-              sortable "era" %></th>
-      <th><%= #link_to "Diet", :sort => "diet"
-              sortable "diet" %></th>
-      <th><%= #link_to "Order", :sort => "taxonomic_order" 
-              sortable "taxonomic_order", "Order" %></th>
-      <th><%= #link_to "Length", :sort => "length" 
-              sortable "length" %></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <div class="sort-by">
+        <ul class="sort-by-list">
+          <li class="sort-by-option">
+            <%= #link_to "Name", :sort => "name"
+                  sortable "name" %>
+          </li>
+          <li class="sort-by-option">
+            <%= #link_to "Era", :sort => "era" 
+                  sortable "era" %>
+          </li>
+          <li class="sort-by-option">
+            <%= #link_to "Diet", :sort => "diet"
+                  sortable "diet" %>
+          </li>
+          <li class="sort-by-option">
+            <%= #link_to "Order", :sort => "taxonomic_order" 
+                  sortable "taxonomic_order", "Order" %>
+          </li>
+          <li class="sort-by-option">
+            <%= #link_to "Length", :sort => "length" 
+                  sortable "length" %>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
 
-  <tbody>
-    <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
-    <% @dinosaurs.each do |dinosaur| %>
-      <tr style="height:200px;">
-        <td><%= image_tag(dinosaur.image_url, class: "dino_img", alt: dinosaur.name)%></td>
-        <td><%= dinosaur.name %></td>
-        <td><%= dinosaur.era %></td>
-        <td><%= dinosaur.diet %></td>
-        <td><%= dinosaur.taxonomic_order %></td>
-        <td><%= dinosaur.length %> ft</td>
-        <td><%= link_to 'Show', dinosaur %></td>
-        <td><%= link_to 'Edit', edit_dinosaur_path(dinosaur) %></td>
-        <td><%= link_to 'Destroy', dinosaur, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  
     
-  </tbody>
-
-</table>
-<%= will_paginate @dinosaurs %>
-
+    <ul class="dino-list">
+      <% @dinosaurs.each do |dinosaur| %>
+        <li class="dino" style="height:200px;">
+          <div class="dino-wrapper">
+            <%= link_to dinosaur do%>
+              <%= image_tag(dinosaur.image_url, class: "dino-img", alt: dinosaur.name)%>
+              <div class="dino-info">
+                <label class="dino-name"><%= dinosaur.name %></label>
+                <label class="dino-era"><%= dinosaur.era %></label>
+                <label class="dino-diet"><%= dinosaur.diet %></label>
+                <label class="dino-order"><%= dinosaur.taxonomic_order %></label>
+                <label class="dino-length"><%= dinosaur.length %> m</label>
+              </div>
+            <% end %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+<%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
+</div>
