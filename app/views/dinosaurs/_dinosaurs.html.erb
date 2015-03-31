@@ -3,10 +3,6 @@
 
 <div>
     <div class="toolbar">
-      <div class="upper-toolbar">
-        <%= text_field_tag :search, params[:search], class: 'search_bar' %>
-        <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
-      </div>
 
       <div class="sort-by">
         <ul class="sort-by-list">
@@ -32,7 +28,7 @@
           </li>
         </ul>
       </div>
-      
+      <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
     </div>
 
   

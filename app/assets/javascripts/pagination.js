@@ -5,6 +5,6 @@ $(function(){
 	});
 	$('#dinosaur_search input').keyup(function(){
 		$.get($("#dinosaur_search").attr("action"), $("#dinosaur_search").serialize(), null, "script");
-		return false; 
+		return false;
 	});
 });

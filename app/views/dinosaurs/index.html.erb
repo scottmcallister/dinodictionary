@@ -9,7 +9,10 @@
 
 	  <%= form_tag(dinosaurs_path, :method => 'get', :id => "dinosaur_search" )do %>
 
-	  	
+	  	<div class="upper-toolbar">
+        	<%= text_field_tag :search, params[:search], class: 'search_bar' %>
+      	</div>
+
 	    
 	    <!--<%= submit_tag "Search" %>-->
 
