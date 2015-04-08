@@ -1,3 +1,99 @@
 // Place all the styles related to the Dinosaurs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content{
+	margin:auto;
+}
+
+#wrapper{
+	padding:10px;
+	background:#808080;
+}
+
+h1{
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
+#left{
+	width:50%;
+	float:left;
+	img{
+		width:80%;
+
+	}
+}
+#right{
+	padding:25px;
+	margin-left:50%;
+	p{
+		text-align:left;
+		font-weight:bold;
+		span{
+			font-weight:normal;
+			float:right;
+		}
+	}
+}
+
+.toolbar .pagination{
+	margin-top:-85px;
+}
+
+.dino-wrapper{
+	background:#808080;
+	padding:20px;
+	height:150px;
+	overflow:auto;
+}
+
+.clearfix{ clear:both; }
+
+.dino-name{ 
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+}
+.dino-era{
+	float:right;
+}
+.dino-info{
+	width:calc(100% - 215px); 
+	margin-left:200px;
+	display:block;
+}
+
+@media (max-width: 600px){
+	#left{
+		width:100%;
+		float:clear;
+		height:250px;
+		font: 0/0 a;
+		img{
+			height:auto;
+			max-height:240px;
+			width:auto;
+			max-width:80%;
+			display:inline-block;
+			vertical-align:middle;
+		}
+	}
+	#left:before{
+		content: ' ';
+	    display: inline-block;
+	    vertical-align: middle;  
+	    height: 100%;
+	}
+	#right{
+		padding:10%;
+		display:block;
+		margin-left:0%;
+		margin-top:250px;
+		height:200px;
+		p{
+			width:90%;
+			padding:5px;
+		}
+	}
+}
