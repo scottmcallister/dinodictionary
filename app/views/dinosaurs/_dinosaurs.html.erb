@@ -18,14 +18,6 @@
             <%= #link_to "Diet", :sort => "diet"
                   sortable "diet" %>
           </li>
-          <li class="sort-by-option">
-            <%= #link_to "Order", :sort => "taxonomic_order" 
-                  sortable "taxonomic_order", "Order" %>
-          </li>
-          <li class="sort-by-option">
-            <%= #link_to "Length", :sort => "length" 
-                  sortable "length" %>
-          </li>
         </ul>
       </div>
       <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
@@ -45,8 +37,6 @@
                 <label class="dino-name"><%= dinosaur.name %></label>
                 <label class="dino-era"><%= dinosaur.era %></label><br>
                 <label class="dino-diet"><%= dinosaur.diet %></label><br>
-                <label class="dino-order"><%= dinosaur.taxonomic_order %></label><br>
-                <label class="dino-length"><%= dinosaur.length %> m</label>
               </div>
             <% end %>
             <div class="clearfix"></div>
