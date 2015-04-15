@@ -62,10 +62,7 @@ a :hover{
 }
 
 .search_bar{
-	background: url('search_icon.png') no-repeat 8px 6px #ffffff;
-	border-radius:15px; 
-	-moz-border-radius:15px; 
-	-webkit-border-radius:15px; 
+	background: url('search_icon.png') no-repeat 0px 6px #ffffff;
 	padding:6px 15px 6px 30px;
 	color:#bcbcbc;
 	border:1px solid #d0d0d0;
@@ -178,6 +175,7 @@ a :hover{
 	text-align: center;
 	font:0/0 a;
 	float:left;
+	background:#ffffff;
 }
 
 .dino-img-wrapper:before{
