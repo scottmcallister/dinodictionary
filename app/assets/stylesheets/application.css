@@ -45,9 +45,7 @@ a :hover{
 	text-align:center;
 	margin: 0 auto;
 	background: #b2b2b2;
-	border-radius: 3px;
 	overflow: auto;
-	padding-bottom:25px;
 }
 
 .logo{
@@ -74,9 +72,8 @@ a :hover{
 	width:auto;
 	float:right;
 	margin:20px;
-	border:1px solid #474747;
-	border-radius:4px;
-	background:#d0d0d0;
+	border:solid 1px #000000;
+	background:#808080;
 	position:relative;
 
 }
@@ -88,7 +85,7 @@ a :hover{
 }
 
 .pagination a:hover{
-	color:#989898;
+	color:#c5c5c5;
 }
 
 .pagination span{
@@ -104,11 +101,7 @@ a :hover{
 }
 
 .pagination .current{
-	color:#989898;
-}
-
-.pagination .disabled{
-	display:none;
+	color:#c5c5c5;
 }
 
 .pagination .next_page{
@@ -117,7 +110,7 @@ a :hover{
 
 .sort-by{
 	width:100%;
-	background:#669999;
+	background:#617991;
 	display:inline-block;
 }
 
@@ -149,7 +142,13 @@ a :hover{
 .upper-toolbar{
 	clear:both;
 	height:70px;
-	background:#006666;
+	background:#243444;
+}
+
+.lower-toolbar{
+	clear:both;
+	height:70px;
+	background:#243444;
 }
 
 .dino-list{
@@ -206,6 +205,8 @@ a :hover{
 .desc{
 	background-image: url("down-arrow.png");
 }
+
+
 
 @media(max-width: 600px) and (min-width: 500px){
 	.title{

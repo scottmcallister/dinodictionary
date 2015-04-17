@@ -1,5 +1,5 @@
 $(function(){
-	$('div#dinosaurs').on('click', '.pagination a, th a', function(){
+	$('div#dinosaurs').on('click', '.pagination a, .sort-by-option a', function(){
 		$.get(this.href, null, null, "script");
 		return false;
 	});

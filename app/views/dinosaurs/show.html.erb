@@ -9,7 +9,9 @@
 
     <h1><%= @dinosaur.name %></h1>
     <div id="left">
+      <div class="wrapper">
       <%= image_tag(@dinosaur.image_url, alt: @dinosaur.name)%>
+      </div>
     </div>
     <div id="right">
       <div id="wrapper">
@@ -22,6 +24,14 @@
         </p>
       </div>
     <br>
+    
+    </div>
+    <br>
+    <div class="bottom">
+      <p>
+        <%= @dinosaur.description %>
+      </p>
+    </div>
 
     <p id="notice"><%= notice %></p>
   
