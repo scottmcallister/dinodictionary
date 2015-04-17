@@ -1,0 +1,530 @@
+/* line 5, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.content {
+  margin: auto;
+}
+
+/* line 9, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#wrapper {
+  padding: 10px;
+  background: #808080;
+}
+
+/* line 14, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+h1 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* line 19, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#left {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+/* line 23, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#left img {
+  width: 80%;
+}
+
+/* line 29, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#left .wrapper {
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  font: 0/0 a;
+  background: #ffffff;
+  margin: auto;
+}
+
+/* line 38, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#left .wrapper:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  height: 100%;
+  width: 0px;
+}
+
+/* line 46, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#left img {
+  height: auto;
+  width: auto;
+  max-height: 250px;
+  max-width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 54, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#right {
+  padding: 25px;
+  margin-left: 50%;
+}
+/* line 57, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#right p {
+  text-align: left;
+  font-weight: bold;
+}
+/* line 60, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+#right p span {
+  font-weight: normal;
+  float: right;
+}
+
+/* line 67, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.toolbar .pagination {
+  margin-top: -85px;
+}
+
+/* line 71, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-wrapper {
+  background: #808080;
+  padding: 20px;
+  height: 150px;
+  overflow: auto;
+}
+
+/* line 78, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 80, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-name {
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* line 86, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-name:hover {
+  color: #F7E956;
+}
+
+/* line 89, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-era {
+  float: right;
+}
+
+/* line 92, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-diet {
+  float: right;
+}
+
+/* line 95, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-description {
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+/* line 100, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.dino-info {
+  width: calc(100% - 215px);
+  margin-left: 200px;
+  display: block;
+}
+
+/* line 106, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+.bottom {
+  width: 90%;
+  padding: 20px;
+  text-align: left;
+  background: #808080;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  /* line 116, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  #left {
+    width: 100%;
+    float: clear;
+    height: 250px;
+    font: 0/0 a;
+  }
+  /* line 121, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  #left img {
+    height: auto;
+    max-height: 240px;
+    width: auto;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* line 131, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  #left:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  /* line 137, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  #right {
+    padding: 10%;
+    display: block;
+    margin-left: 0%;
+    margin-top: 250px;
+    height: 200px;
+  }
+  /* line 143, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  #right p {
+    width: 90%;
+    padding: 5px;
+  }
+
+  /* line 149, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+
+  /* line 155, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination a {
+    display: none;
+  }
+
+  /* line 159, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination em {
+    display: none;
+  }
+
+  /* line 162, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination .gap {
+    display: none;
+  }
+
+  /* line 166, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination span {
+    display: none;
+  }
+
+  /* line 170, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination .previous_page {
+    display: block !important;
+    width: 50%;
+    float: left;
+  }
+
+  /* line 176, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .pagination .next_page {
+    display: block !important;
+    width: 50%;
+    float: right;
+  }
+
+  /* line 184, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/dinosaurs.scss */
+  .toolbar .pagination {
+    margin-top: 0px;
+  }
+}
+/* line 1, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 27, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 32, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 36, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 42, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+.dino-img {
+  max-width: 150px;
+  width: auto;
+  max-height: 150px;
+  height: auto;
+}
+
+/* line 49, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 56, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 66, /Users/scottmcallister/Documents/Programming/Rails/dinodictionary/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+body{
+	background: url(black-stone.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+div{display:block;margin:0;float:none;}
+
+a :hover{
+
+}
+
+.branding{
+	width:auto;
+	max-width:900px;
+	text-align:left;
+	margin:0 auto;
+	vertical-align:middle;
+	height:100px;
+	line-height: 100px;
+	font:normal normal 50px/30px Arial, Helvetica, sans-serif;
+}
+
+.content{
+	width:auto;
+	max-width:900px;
+	text-align:center;
+	margin: 0 auto;
+	background: #b2b2b2;
+	overflow: auto;
+}
+
+.logo{
+	height:100px;
+	width:100px;
+}
+
+.title{
+	color:#ffffff;
+	padding:30px;
+	vertical-align: 25px;
+}
+
+.search_bar{
+	background: url('search_icon.png') no-repeat 0px 6px #ffffff;
+	padding:6px 15px 6px 30px;
+	color:#bcbcbc;
+	border:1px solid #d0d0d0;
+	float:left;
+	margin:20px;
+}
+
+.pagination{
+	width:auto;
+	float:right;
+	margin:20px;
+	border:solid 1px #000000;
+	background:#808080;
+	position:relative;
+
+}
+
+.pagination a{
+	border-right:1px solid #474747;
+	padding:5px;
+	float:left;
+}
+
+.pagination a:hover{
+	color:#c5c5c5;
+}
+
+.pagination span{
+	border-right:1px solid #474747;
+	padding:5px;
+	float:left;
+}
+
+.pagination em{
+	border-right:1px solid #474747;
+	padding:5px;
+	float:left;
+}
+
+.pagination .current{
+	color:#c5c5c5;
+}
+
+.pagination .next_page{
+	border-right:none;
+}
+
+.sort-by{
+	width:100%;
+	background:#617991;
+	display:inline-block;
+}
+
+.sort-by-list{
+	list-style: none;
+	display:inline;
+	width:100%;
+	line-height: 40px;
+	text-align: center;
+}
+
+.sort-by-option{
+	width:30%;
+	font-family:sans-serif;
+	font-size:20px;
+	display:block;
+	float:left;
+	position:relative;
+}
+
+.toolbar{
+	width:100%;
+	height:auto;
+	clear:both;
+	padding:0 0 5px 0;
+	text-align: left;
+}
+
+.upper-toolbar{
+	clear:both;
+	height:70px;
+	background:#243444;
+}
+
+.lower-toolbar{
+	clear:both;
+	height:70px;
+	background:#243444;
+}
+
+.dino-list{
+	list-style: none;
+	position:relative;
+	padding-right:30px;
+}
+
+.dino{
+	width:100%;
+	display:block;
+	position:relative;
+	clear:both;
+}
+
+.dino-wrapper{
+	position:relative;
+}
+
+.dino-img-wrapper{
+	height:150px;
+	width:150px;
+	text-align: center;
+	font:0/0 a;
+	float:left;
+	background:#ffffff;
+}
+
+.dino-img-wrapper:before{
+	content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+    width:0px;
+}
+
+.dino-img{
+	display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+
+}
+
+.current{
+	padding-right: 15px;
+	background-repeat: no-repeat;
+	background-position: right center;
+	
+}
+
+.asc{
+	background-image: url("up-arrow.png");
+}
+
+.desc{
+	background-image: url("down-arrow.png");
+}
+
+
+
+@media(max-width: 600px) and (min-width: 500px){
+	.title{
+		font-size:40px;
+		padding:5px;
+	}
+}
+
+@media (max-width: 500px){
+	.title{
+		font-size:30px;
+		padding:5px;
+	}
+}
+
+
+
