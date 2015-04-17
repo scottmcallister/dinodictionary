@@ -128,6 +128,9 @@ h1{
 		}
 		
 	}
+	.search_bar{
+		width: 75%;
+	}
 	#left:before{
 		content: ' ';
 	    display: inline-block;
@@ -167,16 +170,41 @@ h1{
 		display:none;
 	}
 
+	.dino-description{
+		display:none;
+	}
+
+	.dino-img-wrapper{
+		float:none !important;
+		margin:auto;
+	}
+
+	.dino-info{
+		margin-left:auto !important;
+		width:auto !important;
+		margin-top:10px;
+	}
+	.dino-name, .dino-diet{float: center!important;line-height:10px;}
+	.dino-era{ display:none;}
+
+	.dino{height:275px !important;
+		margin-top:10px;}
+	.dino-wrapper{height:265px !important; padding:5px !important;}
+
 	.pagination .previous_page{
 		display:block !important;
-		width:50%;
-		float:left
+		width:49%;
+		float:left;
+		padding:5px 0px !important;
+		text-align:center;
 	} 
 
 	.pagination .next_page{
 		display:block !important;
-		width:50%;
+		width:49%;
 		float: right;
+		padding:5px 0px!important;
+		text-align:center;
 	}
 
 
