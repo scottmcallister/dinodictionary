@@ -97,10 +97,21 @@ h1{
 	width:70%;
 	text-align:left;
 }
+.dino-short{
+	display:none;
+}
 .dino-info{
 	width:calc(100% - 215px); 
 	margin-left:200px;
 	display:block;
+}
+
+.bottom-header{
+	margin-top:50px;
+	margin-bottom:10px;
+	width:auto;
+	text-align:left;
+	padding-left:30px;
 }
 
 .bottom{
@@ -109,7 +120,18 @@ h1{
 	text-align:left;
 	background:#808080;
 	margin:auto;
-	margin-top:50px;
+	margin-top:20px;
+}
+@media (max-width:780px){
+	.dino-description{
+		display:none;
+	}
+	.dino-short{
+		float:left;
+		widtH:70%;
+		text-align:left;
+		display:block;
+	}
 }
 
 @media (max-width: 600px){
@@ -132,21 +154,28 @@ h1{
 		width: 75%;
 	}
 	#left:before{
-		content: ' ';
-	    display: inline-block;
+	    display: none !important;
 	    vertical-align: middle;  
 	    height: 100%;
 	}
 	#right{
 		padding:10%;
+		padding-bottom:2% !important;
 		display:block;
 		margin-left:0%;
-		margin-top:250px;
-		height:200px;
+		margin-top:300px !important;
+		height:150px;
 		p{
 			width:90%;
 			padding:5px;
 		}
+	}
+
+	.bottom{
+		margin-top:0px !important; 
+	}
+	.bottom-header{
+		margin-top:0px !important;
 	}
 
 	.pagination{
@@ -174,6 +203,10 @@ h1{
 		display:none;
 	}
 
+	.dino-short{
+		display:none;
+	}
+
 	.dino-img-wrapper{
 		float:none !important;
 		margin:auto;
@@ -189,7 +222,7 @@ h1{
 
 	.dino{height:275px !important;
 		margin-top:10px;}
-	.dino-wrapper{height:265px !important; padding:5px !important;}
+	.dino-wrapper{height:235px !important; padding:5px !important; width:200px; margin:auto;}
 
 	.pagination .previous_page{
 		display:block !important;
@@ -207,6 +240,9 @@ h1{
 		text-align:center;
 	}
 
+	.dino-list{
+		padding-top:20px;
+	}
 
 
 	.toolbar .pagination{

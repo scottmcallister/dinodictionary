@@ -62,7 +62,7 @@ a :hover{
 .search_bar{
 	background: url('search_icon.png') no-repeat 0px 6px #ffffff;
 	padding:6px 15px 6px 30px;
-	color:#bcbcbc;
+	color:#808080;
 	border:1px solid #d0d0d0;
 	float:left;
 	margin:20px;
