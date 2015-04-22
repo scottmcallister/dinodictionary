@@ -6,6 +6,11 @@
 	margin:auto;
 }
 
+.no-dino-image{
+	width:200px;
+	height:250px;
+}
+
 #wrapper{
 	padding:10px; 
 	background:#808080;
@@ -32,7 +37,8 @@ h1{
 	text-align: center;
 	font: 0/0 a;
 	background: #ffffff;
-	margin:auto
+	margin:auto;
+	border:10px solid #808080;
 }
 
 #left .wrapper:before{
@@ -75,6 +81,8 @@ h1{
 	overflow:auto;
 }
 
+
+
 .clearfix{ clear:both; }
 
 .dino-name{ 
@@ -107,11 +115,10 @@ h1{
 }
 
 .bottom-header{
-	margin-top:50px;
+	margin-top:80px;
 	margin-bottom:10px;
 	width:auto;
-	text-align:left;
-	padding-left:30px;
+	text-align:center;
 }
 
 .bottom{

@@ -23,28 +23,35 @@
       <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
     </div>
 
-  
     
-    <ul class="dino-list">
-      <% @dinosaurs.each do |dinosaur| %>
-        <li class="dino" style="height:200px;">
-          <div class="dino-wrapper">
-            <%= link_to dinosaur do %>
-              <div class="dino-img-wrapper">
-                <%= image_tag(dinosaur.image_url, class: "dino-img", alt: dinosaur.name)%>
+    <% if @dinosaurs.count > 0 %>
+    
+      <ul class="dino-list">
+        <% @dinosaurs.each do |dinosaur| %>
+          <li class="dino" style="height:200px;">
+            <div class="dino-wrapper">
+              <%= link_to dinosaur do %>
+                <div class="dino-img-wrapper">
+                  <%= image_tag(dinosaur.image_url, class: "dino-img", alt: dinosaur.name)%>
+                </div>
+              <% end %>
+              <div class="dino-info">
+                <%= link_to dinosaur.name, dinosaur, class: "dino-name" %>
+                <label class="dino-era"><%= dinosaur.era %></label><br>
+                <label class="dino-diet"><%= dinosaur.diet %></label><br>
+                <label class="dino-description"><%= truncate(dinosaur.description, length: 250) %></label><br>
+                <label class="dino-short"><%= truncate(dinosaur.description, length: 100) %></label><br>
               </div>
-            <% end %>
-            <div class="dino-info">
-              <%= link_to dinosaur.name, dinosaur, class: "dino-name" %>
-              <label class="dino-era"><%= dinosaur.era %></label><br>
-              <label class="dino-diet"><%= dinosaur.diet %></label><br>
-              <label class="dino-description"><%= truncate(dinosaur.description, length: 250) %></label><br>
-              <label class="dino-short"><%= truncate(dinosaur.description, length: 100) %></label><br>
+              <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
-          </div>
-        </li>
-      <% end %>
-    </ul>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+
+      <h2>No Dinosaurs Found! </h2>
+      <%= image_tag("dead-friends.png", class: "no-dino-image") %>
+
+    <% end %>
   <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
 </div>

@@ -1,8 +1,8 @@
 <div class="branding">
-  <a href="/">
+  <%= link_to("/", :controller => "dinosaurs_controller", :action => "index") do %>
     <%= image_tag("skull-white.png", :class => "logo") %>
     <label class="title">Dinosaur Search</label>
-  </a>
+  <% end %>
 </div>
 
 <div class="content">
