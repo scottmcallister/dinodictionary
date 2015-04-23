@@ -2,7 +2,6 @@ class SearchesController < ApplicationController
 
 def new
 	@search = Search.new
-	#@orders = ["Saurischia", "Ornithischia"]
 end
 
 def create

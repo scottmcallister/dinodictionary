@@ -16,11 +16,6 @@
 	background:#808080;
 }
 
-h1{
-	margin-bottom:50px;
-	margin-top:50px;
-}
-
 #left{
 	text-align:center;
 	img{
@@ -146,7 +141,7 @@ h1{
 	#left{
 		width:100%;
 		float:clear;
-		height:250px;
+		height:200px;
 		font: 0/0 a;
 		img{
 			height:auto;
@@ -167,11 +162,9 @@ h1{
 	    height: 100%;
 	}
 	#right{
-		padding:10%;
 		padding-bottom:2% !important;
 		display:block;
 		margin-left:0%;
-		margin-top:300px !important;
 		height:150px;
 		p{
 			width:90%;
@@ -256,4 +249,9 @@ h1{
 	.toolbar .pagination{
 		margin-top:0px;
 	}
+
+	.modal{
+		width:70% !important;
+	}
+
 }
