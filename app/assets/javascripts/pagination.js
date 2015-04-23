@@ -4,7 +4,9 @@ $(function(){
 		return false;
 	});
 	$('#dinosaur_search input').keyup(function(){
+		$('#loading-gif').show();
 		$.get($("#dinosaur_search").attr("action"), $("#dinosaur_search").serialize(), null, "script");
+		$('#loading-gif').hide();
 		return false;
 	});
 });
