@@ -22,8 +22,6 @@ h1{
 }
 
 #left{
-	width:50%;
-	float:left;
 	text-align:center;
 	img{
 		width:80%;
@@ -32,8 +30,8 @@ h1{
 }
 
 #left .wrapper{
-	height:250px;
-	width:250px;
+	height:150px;
+	width:150px;
 	text-align: center;
 	font: 0/0 a;
 	background: #ffffff;
@@ -52,14 +50,13 @@ h1{
 #left img{
 	height:auto;
 	width:auto;
-	max-height:250px;
-	max-width:250px;
+	max-height:150px;
+	max-width:150px;
 	display:inline-block;
 	vertical-align:middle;
 }
 #right{
-	padding:25px;
-	margin-left:50%;
+	padding-top:15px;
 	p{
 		text-align:left;
 		font-weight:bold;
@@ -115,7 +112,6 @@ h1{
 }
 
 .bottom-header{
-	margin-top:80px;
 	margin-bottom:10px;
 	width:auto;
 	text-align:center;
@@ -129,6 +125,11 @@ h1{
 	margin:auto;
 	margin-top:20px;
 }
+
+.modal a.close-modal {
+	background: url('close.png')no-repeat 0 0 !important;
+}
+
 @media (max-width:780px){
 	.dino-description{
 		display:none;
