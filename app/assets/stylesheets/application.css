@@ -231,6 +231,9 @@ a :hover{
 		font-size:23px;
 		padding:0px;
 	}
+	.sort-by-option{
+		width:27%;
+	}
 }
 
 
