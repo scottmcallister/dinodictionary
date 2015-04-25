@@ -219,10 +219,17 @@ a :hover{
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) and (min-width:400px){
 	.title{
 		font-size:30px;
 		padding:5px;
+	}
+}
+
+@media(max-width:400px){
+	.title{
+		font-size:23px;
+		padding:0px;
 	}
 }
 
