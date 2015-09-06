@@ -34,10 +34,6 @@ gem 'whenever', require: false
 gem 'will_paginate', '3.0.7'
 # Helps with loading custom JS stuff
 gem 'nifty-generators', '0.4.6'
-# jQuery modal window support 
-
-gem 'jquery-ui-rails'
-gem 'jquery-modal-rails'
 
 
 group :production do 

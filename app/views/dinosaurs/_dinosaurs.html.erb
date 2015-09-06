@@ -25,55 +25,71 @@
 
     
     <% if @dinosaurs.count > 0 %>
-    
-      <ul class="dino-list">
+
+      <div class="row">
         <% @dinosaurs.each do |dinosaur| %>
-          <li class="dino" style="height:200px;">
-            <div class="dino-wrapper">
-              <%= link_to_modal "##{dinosaur.name}" do %>
-                <div class="dino-img-wrapper">
+
+          <!-- Thumbnail -->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <div class="dino-img-wrapper">
                   <%= image_tag(dinosaur.image_url, class: "dino-img", alt: dinosaur.name)%>
                 </div>
-              <% end %>
-              <div class="dino-info">
-                <%= link_to_modal dinosaur.name, "##{dinosaur.name}", :class => "dino-name", :rel => "modal:close" %>
-                <label class="dino-era"><%= dinosaur.era %></label><br>
-                <label class="dino-diet"><%= dinosaur.diet %></label><br>
-                <label class="dino-description"><%= truncate(dinosaur.description, length: 250) %></label><br>
-                <label class="dino-short"><%= truncate(dinosaur.description, length: 100) %></label><br>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </li>
-          <div id=<%= dinosaur.name %> style="display:none;background:#b2b2b2;">
-            <h1><%= dinosaur.name %></h1>
-            <div id="left">
-              <div class="wrapper">
-              <%= image_tag(dinosaur.image_url, alt: dinosaur.name)%>
+              <div class="caption">
+                <h3><%= dinosaur.name %></h3>
+                <label><%= dinosaur.era %></label><br>
+                <label><%= dinosaur.diet %></label><br>
+                <p><%= truncate(dinosaur.description, length: 100) %></p>
+                <p><button data-target="#<%= dinosaur.name %>" data-toggle="modal" class="btn btn-primary" type="button">More Info</button> </p>
               </div>
             </div>
-            <div id="right">
-              <div id="wrapper">
-                <p>
-                  Era: <span><%= dinosaur.era %></span><br>
-                  Diet: <span><%= dinosaur.diet%></span><br>
-                  Order: <span><%= dinosaur.taxonomic_order%></span><br>
-                  Length: <span><%= dinosaur.length%></span><br>
-                  Location: <span><%= dinosaur.location%></span><br>
-                </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id=<%= dinosaur.name %> tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header modal-primary">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><%= dinosaur.name %></h4>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="dino-img-wrapper">
+                      <%= image_tag(dinosaur.image_url, class: "dino-img", alt: dinosaur.name)%>
+                    </div>
+                    <p>
+                      <div class="row">
+                        <b class="col-sm-4 col-sm-offset-2 text-left">Era:</b> <span class="col-sm-4 text-left"><%= dinosaur.era %></span>
+                      </div>
+                      <div class="row">
+                        <b class="col-sm-4 col-sm-offset-2 text-left">Diet:</b> <span class="col-sm-4 text-left"><%= dinosaur.diet%></span>
+                      </div>
+                      <div class="row">
+                        <b class="col-sm-4 col-sm-offset-2 text-left">Order:</b> <span class="col-sm-4 text-left"><%= dinosaur.taxonomic_order%></span>
+                      </div>
+                      <div class="row">
+                        <b class="col-sm-4 col-sm-offset-2 text-left">Length:</b> <span class="col-sm-4 text-left"><%= dinosaur.length%></span>
+                      </div>
+                      <div class="row">
+                        <b class="col-sm-4 col-sm-offset-2 text-left">Location:</b> <span class="col-sm-4 text-left"><%= dinosaur.location%></span>
+                      </div>
+                    </p>
+                    <p>
+                      <%= dinosaur.description %>
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
               </div>
-            <br>
-            
-            </div>
-            <h3 class="bottom-header">Description</h3>
-            <div class="bottom">
-              <p>
-                <%= dinosaur.description %>
-              </p>
             </div>
           </div>
         <% end %>
-      </ul>
+      </div>
+
     <% else %>
 
       <h2>No Dinosaurs Found! </h2>

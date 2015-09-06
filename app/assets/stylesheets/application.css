@@ -12,8 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require jquery-ui 
- *= require jquery.modal  
  */
 
 body{
@@ -175,8 +173,9 @@ a :hover{
 	width:150px;
 	text-align: center;
 	font:0/0 a;
-	float:left;
+	float:none;
 	background:#ffffff;
+	margin:auto;
 }
 
 .dino-img-wrapper:before{
@@ -206,6 +205,23 @@ a :hover{
 
 .desc{
 	background-image: url("down-arrow.png");
+}
+
+.modal-header{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #e5e5e5;
+}
+
+.modal-footer{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #e5e5e5;
+}
+
+.row{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
 }
 
 
