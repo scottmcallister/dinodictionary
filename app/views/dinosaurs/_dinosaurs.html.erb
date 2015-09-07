@@ -1,32 +1,56 @@
-<%= hidden_field_tag :direction, params[:direction]%>
-<%= hidden_field_tag :sort, params[:sort]%>
-
 <div>
-    <div class="toolbar">
-
-      <div class="sort-by">
-        <ul class="sort-by-list">
-          <li class="sort-by-option">
-            <%= #link_to "Name", :sort => "name"
-                  sortable "name" %>
-          </li>
-          <li class="sort-by-option">
-            <%= #link_to "Era", :sort => "era" 
-                  sortable "era" %>
-          </li>
-          <li class="sort-by-option">
-            <%= #link_to "Diet", :sort => "diet"
-                  sortable "diet" %>
-          </li>
-        </ul>
-      </div>
-      <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
-    </div>
-
     
     <% if @dinosaurs.count > 0 %>
 
       <div class="row">
+
+        <!-- search refinements -->
+
+        
+        <div class="col-sm-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              Era
+            </div>
+            <div class="panel-body">
+              <%= refinement "era", "triassic", params %><br>
+              <%= refinement "era", "jurassic", params %><br>
+              <%= refinement "era", "cretaceous", params %>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              Diet
+            </div>
+            <div class="panel-body">
+              <%= refinement "diet", "carnivore", params %><br>
+              <%= refinement "diet", "herbivore", params %>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              Order
+            </div>
+            <div class="panel-body">
+              <%= refinement "taxonomic_order", "saurischia", params %><br>
+              <%= refinement "taxonomic_order", "herbivore", params %>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              Location
+            </div>
+            <div class="panel-body">
+              <%= refinement "location", "usa", params %><br>
+              <%= refinement "location", "herbivore", params %>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <!-- dino listing -->
+        <div class="col-sm-9">
         <% @dinosaurs.each do |dinosaur| %>
 
           <!-- Thumbnail -->
@@ -40,7 +64,7 @@
                 <label><%= dinosaur.era %></label><br>
                 <label><%= dinosaur.diet %></label><br>
                 <p><%= truncate(dinosaur.description, length: 100) %></p>
-                <p><button data-target="#<%= dinosaur.name %>" data-toggle="modal" class="btn btn-primary" type="button">More Info</button> </p>
+                <p style="text-align:center;"><button data-target="#<%= dinosaur.name %>" data-toggle="modal" class="btn btn-primary" type="button">More Info</button> </p>
               </div>
             </div>
           </div>
@@ -49,7 +73,7 @@
           <div class="modal fade" id=<%= dinosaur.name %> tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="modal-header modal-primary">
+                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <h4 class="modal-title" id="myModalLabel"><%= dinosaur.name %></h4>
                 </div>
@@ -88,6 +112,10 @@
             </div>
           </div>
         <% end %>
+        <div class="text-center">
+          <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
+        </div>
+        </div>
       </div>
 
     <% else %>
@@ -96,6 +124,6 @@
       <%= image_tag("dead-friends.png", class: "no-dino-image") %>
 
     <% end %>
-  <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
+  
 </div>
 

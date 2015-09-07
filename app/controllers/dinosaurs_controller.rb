@@ -6,7 +6,8 @@ class DinosaursController < ApplicationController
   # GET /dinosaurs
   # GET /dinosaurs.json
   def index
-    @dinosaurs = Dinosaur.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 15, :page => params[:page])
+    @dinosaurs = Dinosaur.search(params[:search], params[:era], params[:diet], params[:location], params[:taxinomic_order]).order(sort_column + " " + sort_direction).paginate(:per_page => 12, :page => params[:page])
+    @params = params
   end
 
   # GET /dinosaurs/1
