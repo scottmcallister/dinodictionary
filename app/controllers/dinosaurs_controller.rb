@@ -1,4 +1,5 @@
 class DinosaursController < ApplicationController
+
   helper_method :sort_column, :sort_direction
 
   before_action :set_dinosaur, only: [:show, :edit, :update, :destroy]

@@ -13,8 +13,6 @@ def show
 	@search = Search.find(params[:id])
 end
 
-
-
 private
 
 def search_params

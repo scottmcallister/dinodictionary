@@ -1,5 +1,6 @@
 class Dinosaur < ActiveRecord::Base
 
+	# search for dinosaur records to display
 	def self.search(search, era, diet, location, taxonomy)
 		
 		if search
@@ -7,6 +8,6 @@ class Dinosaur < ActiveRecord::Base
 		else 
 			all
 		end
-
 	end
+	
 end

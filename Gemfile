@@ -34,7 +34,7 @@ gem 'whenever', require: false
 gem 'will_paginate-bootstrap'
 # Helps with loading custom JS stuff
 gem 'nifty-generators', '0.4.6'
-
+# Include font-awesome for the navbar's github icon
 gem 'font-awesome-rails'
 
 
@@ -42,16 +42,6 @@ group :production do
 	# Improve compatibility on Heroku
 	gem 'rails_12factor'
 end
-
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

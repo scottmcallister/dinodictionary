@@ -2,6 +2,7 @@ require 'csv'
 
 namespace :csv do
 
+	# parse through tab delimited data.csv file and create a dinosaur record for each entry
   	desc "Import CSV Data"
   	task :import_stuff => :environment do
 
