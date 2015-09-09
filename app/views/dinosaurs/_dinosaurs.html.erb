@@ -8,43 +8,185 @@
 
         
         <div class="col-sm-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              Era
+
+          <!-- desktop refines -->
+          <div class="panel-group hidden-phone">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#era_refines"><h4 class="panel-title">
+                  Era
+                </h4></a>
+              </div>
+              <div id="era_refines" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <%= refinement "era", "triassic", params %><br>
+                  <%= refinement "era", "jurassic", params %><br>
+                  <%= refinement "era", "cretaceous", params %>
+                </div>
+              </div>
             </div>
-            <div class="panel-body">
-              <%= refinement "era", "triassic", params %><br>
-              <%= refinement "era", "jurassic", params %><br>
-              <%= refinement "era", "cretaceous", params %>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#diet_refines"><h4 class="panel-title">
+                  Diet
+                </h4></a>
+              </div>
+              <div id="diet_refines" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <%= refinement "diet", "carnivore", params %><br>
+                  <%= refinement "diet", "herbivore", params %>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#order_refines"><h4 class="panel-title">
+                  Order
+                </h4></a>
+              </div>
+              <div id="order_refines" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <%= refinement "taxonomic_order", "saurischia", params %><br>
+                  <%= refinement "taxonomic_order", "herbivore", params %>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#location_refines">
+                <h4 class="panel-title">
+                  Location
+                </h4>
+                </a>
+              </div>
+              <div id="location_refines" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <%= refinement "location", "antarctica", params %><br>
+                  <%= refinement "location", "argentina", params %><br>
+                  <%= refinement "location", "australia", params %><br>
+                  <%= refinement "location", "austria", params %><br>
+                  <%= refinement "location", "brazil", params %><br>
+                  <%= refinement "location", "canada", params %><br>
+                  <%= refinement "location", "chile", params %><br>
+                  <%= refinement "location", "china", params %><br>
+                  <%= refinement "location", "egypt", params %><br>
+                  <%= refinement "location", "england", params %><br>
+                  <%= refinement "location", "germany", params %><br>
+                  <%= refinement "location", "france", params %><br>
+                  <%= refinement "location", "india", params %><br>
+                  <%= refinement "location", "japan", params %><br>
+                  <%= refinement "location", "kazakhstan", params %><br>
+                  <%= refinement "location", "lesotho", params %><br>
+                  <%= refinement "location", "madigascar", params %><br>
+                  <%= refinement "location", "mongolia", params %><br>
+                  <%= refinement "location", "morocco", params %><br>
+                  <%= refinement "location", "portugal", params %><br>
+                  <%= refinement "location", "russia", params %><br>
+                  <%= refinement "location", "romania", params %><br>
+                  <%= refinement "location", "scotland", params %><br>
+                  <%= refinement "location", "south africa", params %><br>
+                  <%= refinement "location", "spain", params %><br>
+                  <%= refinement "location", "tanzania", params %><br>
+                  <%= refinement "location", "USA", params %><br>
+                  <%= refinement "location", "uraguay", params %><br>
+                  <%= refinement "location", "united kingdom", params %><br>
+                  <%= refinement "location", "uzbekistan", params %><br>
+                  <%= refinement "location", "zimbabwe", params %>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              Diet
+
+          <!-- mobile refines -->
+          <div class="panel-group visible-phone">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#era_refines_mobile"><h4 class="panel-title">
+                  Era
+                </h4></a>
+              </div>
+              <div id="era_refines_mobile" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <%= refinement "era", "triassic", params %><br>
+                  <%= refinement "era", "jurassic", params %><br>
+                  <%= refinement "era", "cretaceous", params %>
+                </div>
+              </div>
             </div>
-            <div class="panel-body">
-              <%= refinement "diet", "carnivore", params %><br>
-              <%= refinement "diet", "herbivore", params %>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#diet_refines_mobile"><h4 class="panel-title">
+                  Diet
+                </h4></a>
+              </div>
+              <div id="diet_refines_mobile" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <%= refinement "diet", "carnivore", params %><br>
+                  <%= refinement "diet", "herbivore", params %>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#order_refines_mobile"><h4 class="panel-title">
+                  Order
+                </h4></a>
+              </div>
+              <div id="order_refines_mobile" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <%= refinement "taxonomic_order", "saurischia", params %><br>
+                  <%= refinement "taxonomic_order", "herbivore", params %>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              
+              <div class="panel-heading">
+                <a data-toggle="collapse" class="refine-list-title" href="#location_refines_mobile">
+                <h4 class="panel-title">
+                  Location
+                </h4>
+                </a>
+              </div>
+              <div id="location_refines_mobile" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <%= refinement "location", "antarctica", params %><br>
+                  <%= refinement "location", "argentina", params %><br>
+                  <%= refinement "location", "australia", params %><br>
+                  <%= refinement "location", "austria", params %><br>
+                  <%= refinement "location", "brazil", params %><br>
+                  <%= refinement "location", "canada", params %><br>
+                  <%= refinement "location", "chile", params %><br>
+                  <%= refinement "location", "china", params %><br>
+                  <%= refinement "location", "egypt", params %><br>
+                  <%= refinement "location", "england", params %><br>
+                  <%= refinement "location", "germany", params %><br>
+                  <%= refinement "location", "france", params %><br>
+                  <%= refinement "location", "india", params %><br>
+                  <%= refinement "location", "japan", params %><br>
+                  <%= refinement "location", "kazakhstan", params %><br>
+                  <%= refinement "location", "lesotho", params %><br>
+                  <%= refinement "location", "madigascar", params %><br>
+                  <%= refinement "location", "mongolia", params %><br>
+                  <%= refinement "location", "morocco", params %><br>
+                  <%= refinement "location", "portugal", params %><br>
+                  <%= refinement "location", "russia", params %><br>
+                  <%= refinement "location", "romania", params %><br>
+                  <%= refinement "location", "scotland", params %><br>
+                  <%= refinement "location", "south africa", params %><br>
+                  <%= refinement "location", "spain", params %><br>
+                  <%= refinement "location", "tanzania", params %><br>
+                  <%= refinement "location", "USA", params %><br>
+                  <%= refinement "location", "uraguay", params %><br>
+                  <%= refinement "location", "united kingdom", params %><br>
+                  <%= refinement "location", "uzbekistan", params %><br>
+                  <%= refinement "location", "zimbabwe", params %>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              Order
-            </div>
-            <div class="panel-body">
-              <%= refinement "taxonomic_order", "saurischia", params %><br>
-              <%= refinement "taxonomic_order", "herbivore", params %>
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              Location
-            </div>
-            <div class="panel-body">
-              <%= refinement "location", "usa", params %><br>
-              <%= refinement "location", "herbivore", params %>
-            </div>
-          </div>
+          
         </div>
         
 
@@ -113,15 +255,17 @@
           </div>
         <% end %>
         <div class="text-center">
-          <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT"%>
+          <%= will_paginate @dinosaurs, inner_window: 2, outter_window: 0, previous_label: "PREV", next_label: "NEXT", renderer: BootstrapPagination::Rails %>
         </div>
         </div>
       </div>
 
     <% else %>
 
-      <h2>No Dinosaurs Found! </h2>
-      <%= image_tag("dead-friends.png", class: "no-dino-image") %>
+      <div class="text-center">
+        <h2>No Dinosaurs Found! </h2>
+        <%= image_tag("dead-friends.png", class: "no-dino-image") %>
+      </div>
 
     <% end %>
   

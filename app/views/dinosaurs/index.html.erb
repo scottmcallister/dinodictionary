@@ -5,12 +5,20 @@
 	        Dinosaur Search
 	      </a>
 	    </div>
+	    <ul class="nav navbar-nav">
+	    	<li>
+		    	<a target="_blank" href="https://github.com/scottmcallister/dinodictionary">
+		    		<i class="fa fa-github fa-lg"></i> View Source
+		    	</a>
+	    	</li>
+	    </ul>
 	    <form class="navbar-form navbar-right" role="search" autocomplete="off" action="/dinosaurs" method="get">
+	    	<%= hidden_field_tag "era", params[:era] %>
+	    	<%= hidden_field_tag "diet", params[:diet] %>
+	    	<%= hidden_field_tag "taxonomic_order", params[:taxonomic_order] %>
+	    	<%= hidden_field_tag "location", params[:location] %>
 	        <div class="form-group">
 	          <%= text_field_tag :search, params[:search], class: 'form-control' %>
-	          <!--<select class="form-control" name="sort">
-
-	          </select>-->
 	        </div>
 	        <button type="submit" class="btn btn-primary">Search</button>
       	</form>

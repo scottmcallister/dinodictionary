@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
@@ -51,7 +52,7 @@ div{display:block;margin:0;float:none;}
 	float:left;
 	margin:20px;
 }
-
+/*
 .pagination{
 	width:auto;
 	float:none;
@@ -97,7 +98,7 @@ div{display:block;margin:0;float:none;}
 	border:1px solid #a9a9a9;
 	border-radius:3px;
 }
-
+*/
 .sort-by{
 	width:100%;
 	background:#617991;
@@ -249,6 +250,30 @@ div{display:block;margin:0;float:none;}
 	font-weight: bold;
 	margin:0px;
 	padding-left:25px;
+}
+
+.panel-title{
+	color: #ffffff;
+}
+
+.refine-list-title :hover{
+	color:#000000 !important;
+	text-decoration: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+@media(max-width: 767px) {
+  .hidden-phone{
+   display: none;
+   }
+}
+@media(min-width: 768px){
+	.visible-phone{
+		display:none;
+	}
 }
 
 
