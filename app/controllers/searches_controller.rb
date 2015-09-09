@@ -18,7 +18,7 @@ end
 private
 
 def search_params
-	params.require(:search).permit(:keywords, :name, :era, :diet, :taxonomic_order, :min_length, :max_length, :min_height, :max_height)
+	params.require(:search).permit(:keywords, :name, :era, :diet, :taxonomy, :min_length, :max_length, :min_height, :max_height)
 end
 
 
