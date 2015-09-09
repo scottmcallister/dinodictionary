@@ -42,7 +42,7 @@ namespace :csv do
 				    :name => row[0],
 				    :era => row[1],
 				    :diet => row[2],     
-				    :taxonomic_order => row[3], 
+				    :taxonomy => row[3], 
 			    	:length => row[4],
 				    :image_url => row[5], 
 				    :description => row[6],

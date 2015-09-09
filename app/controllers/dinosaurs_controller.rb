@@ -6,7 +6,7 @@ class DinosaursController < ApplicationController
   # GET /dinosaurs
   # GET /dinosaurs.json
   def index
-    @dinosaurs = Dinosaur.search(params[:search], params[:era], params[:diet], params[:location], params[:taxinomic_order]).order(sort_column + " " + sort_direction).paginate(:per_page => 12, :page => params[:page])
+    @dinosaurs = Dinosaur.search(params[:search], params[:era], params[:diet], params[:location], params[:taxonomy]).order(sort_column + " " + sort_direction).paginate(:per_page => 12, :page => params[:page])
     @params = params
   end
 
@@ -72,7 +72,7 @@ class DinosaursController < ApplicationController
 
     # Only allow the white list of params through.
     def dinosaur_params
-      params.require(:dinosaur).permit(:name, :era, :diet, :taxonomic_order, :length, :height, :image_url, :description)
+      params.require(:dinosaur).permit(:name, :era, :diet, :taxonomy, :length, :height, :image_url, :description)
     end
 
     def sort_column

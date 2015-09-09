@@ -23,13 +23,13 @@ module ApplicationHelper
 
 			case field
 			when "era"
-				return link_to value.titleize, params.merge(:search => search, :era => "", :diet => parameters[:diet], :taxonomic_order => parameters[:taxonomic_order], :location => parameters[:location]), :class => "selected_refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => "", :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => parameters[:location]), :class => "selected_refinement"
 			when "diet"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => "", :taxonomic_order => parameters[:taxonomic_order], :location => parameters[:location]), :class => "selected_refinement"
-			when "taxonomic_order"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomic_order => "", :location => parameters[:location]), :class => "selected_refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => "", :taxonomy => parameters[:taxonomy], :location => parameters[:location]), :class => "selected_refinement"
+			when "taxonomy"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => "", :location => parameters[:location]), :class => "selected_refinement"
 			when "location"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomic_order => parameters[:taxonomic_order], :location => ""), :class => "selected_refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => ""), :class => "selected_refinement"
 			end
 		else
 			if(parameters.has_key?(:search))
@@ -42,13 +42,13 @@ module ApplicationHelper
 
 			case field
 			when "era"
-				return link_to value.titleize, params.merge(:search => search, :era => value, :diet => parameters[:diet], :taxonomic_order => parameters[:taxonomic_order], :location => parameters[:location]), :class => "refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => value, :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => parameters[:location]), :class => "refinement"
 			when "diet"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => value, :taxonomic_order => parameters[:taxonomic_order], :location => parameters[:location]), :class => "refinement"
-			when "taxonomic_order"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomic_order => value, :location => parameters[:location]), :class => "refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => value, :taxonomy => parameters[:taxonomy], :location => parameters[:location]), :class => "refinement"
+			when "taxonomy"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => value, :location => parameters[:location]), :class => "refinement"
 			when "location"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomic_order => parameters[:taxonomic_order], :location => value), :class => "refinement"
+				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => value), :class => "refinement"
 			end
 		end
 	end

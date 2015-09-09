@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408120735) do
+ActiveRecord::Schema.define(version: 20150909114045) do
 
   create_table "dinosaurs", force: :cascade do |t|
     t.string   "name"
     t.string   "era"
     t.string   "diet"
-    t.string   "taxonomic_order"
+    t.string   "taxonomy"
     t.integer  "length"
     t.integer  "height"
     t.string   "image_url"
     t.text     "description"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "location"
     t.integer  "era_sort_order"
   end
@@ -33,13 +33,13 @@ ActiveRecord::Schema.define(version: 20150408120735) do
     t.string   "name"
     t.string   "era"
     t.string   "diet"
-    t.string   "taxonomic_order"
+    t.string   "taxonomy"
     t.integer  "min_length"
     t.integer  "max_length"
     t.integer  "min_height"
     t.integer  "max_height"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
