@@ -29,7 +29,11 @@ module ApplicationHelper
 			when "taxonomy"
 				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => "", :location => parameters[:location]), :class => "selected_refinement"
 			when "location"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => ""), :class => "selected_refinement"
+				if value != "usa"
+					return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => ""), :class => "selected_refinement"
+				else
+					return link_to value.upcase, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => ""), :class => "selected_refinement"
+				end
 			end
 		else
 			if(parameters.has_key?(:search))
@@ -48,7 +52,11 @@ module ApplicationHelper
 			when "taxonomy"
 				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => value, :location => parameters[:location]), :class => "refinement"
 			when "location"
-				return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => value), :class => "refinement"
+				if value != "usa"
+					return link_to value.titleize, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => value), :class => "refinement"
+				else
+					return link_to value.upcase, params.merge(:search => search, :era => parameters[:era], :diet => parameters[:diet], :taxonomy => parameters[:taxonomy], :location => value), :class => "refinement"
+				end
 			end
 		end
 	end
